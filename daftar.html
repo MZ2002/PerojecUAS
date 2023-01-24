@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Pendaftaran</title>
+  <style>
+    /* CSS untuk mempercantik tampilan halaman */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .registration-form {
+      width: 500px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #f1f1f1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .form-control:focus {
+      background-color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #00dbf8;
+      color: #fff;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #00fffb;
+    }
+  </style>
+</head>
+<body>
+  <form class="registration-form">
+    <h2>Halaman Pendaftaran</h2>
+    <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+    <input type="text" class="form-control" placeholder="Username" required>
+    <input type="Nim" class="form-control" placeholder="Nim" required>
+    <input type="email" class="form-control" placeholder="Email" required>
+    <input type="text" class="form-control" placeholder="Password" required>
+    <input type="text" class="form-control" placeholder="Cek Password" required>
+    </div>
+    <button type="submit" class="btn">Daftar</button>
+    <p>Sudah daftar<a href="Login.html"> Kembali </a></p>
+  </form>
+</body>
+</html>
+  <script>
+    // JavaScript untuk menangani event submit form
+    const form = document.querySelector('.registration-form');
+    form.addEventListener('submit', (event) => {})
+      event.preventDefault();
+      // Ambil value dari input username, email, password, dan konfirmasi password
+      const username = form.elements.namedItem('username').value;
+      const email = form.elements.namedItem('email').value;
+      const password = form.elements.namedItem('password').value;
+      const passwordConfirm = form.elements.namedItem('password-confirm').value;
+      console.log(username, email, password, passwordConfirm);
+      // Validasi password dan konfirmasi password sama atau tidak
+      if (password !== passwordConfirm) {}
+        alert

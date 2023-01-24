@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Login</title>
+  <style>
+    /* CSS untuk mempercantik tampilan halaman */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .login-form {
+      width: 300px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: #f1f1f1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .form-control:focus {
+      background-color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #00c8ff;
+      color: #fff;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #00d5ff;
+    }
+  </style>
+</head>
+<body>
+  <form class="login-form">
+    <h2>Halaman Login</h2>
+    <input type="text" class="form-control" placeholder="Username" required>
+    <input type="password" class="form-control" placeholder="Password" required>
+    <button type="submit" class="btn"><a href="index1.html">Login</a></button>
+    <p>Belum punya akun <a href="daftar.html">daftar</a></p>
+  </form>
+  <script>
+    // JavaScript untuk menangani event submit form
+    const form = document.querySelector('.login-form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      // Ambil value dari input username dan password
+      const username = form.elements.namedItem('username').value;
+      const password = form.elements.namedItem('password').value;
+      console.log(username, password);
+      // Kirim data login ke server melalui AJAX atau fetch API
+    });
+  </script>
+</body>
+</html>

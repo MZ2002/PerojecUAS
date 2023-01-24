@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ruangan</title>
+    <style>
+        /* CSS untuk mempercantik tampilan halaman */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f1f1;
+        }
+    
+        .registration-form {
+          width: 500px;
+          margin: auto;
+          background-color: #fff;
+          border-radius: 5px;
+          padding: 20px;
+        }
+    
+        .form-control {
+          width: 100%;
+          margin-bottom: 10px;
+          background-color: #f1f1f1;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 14px;
+          border-radius: 5px;
+        }
+    
+        .form-control:focus {
+          background-color: #fff;
+        }
+    
+        .btn {
+          width: 100%;
+          background-color: #00b3ff;
+          color: #fff;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .btn:hover {
+          background-color: #00ccff;
+        }
+      </style>
+</head>
+<body>
+
+    <form class="registration-form">
+        <h2>Booking Ruangan Stt NF</h2>
+        <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+        <input type="Nim" class="form-control" placeholder="Nim" required>
+        <input type="email" class="form-control" placeholder="Email" required>
+        <textarea name="description" id="" cols="69" rows="8"  placeholder="Deskripsi"></textarea>
+        <br>
+        <div style="display: flex;">
+          <table>
+          <label for="radio-1">Wifi</label>
+          <input type="radio" id="radio-1" name="radio" value="pilihan-1">
+          <br>
+          <label for="radio-2">Layar Besar</label>
+          <input type="radio" id="radio-2" name="radio" value="pilihan-2">
+          <br>
+          <label for="radio-3">Katering</label>
+          <input type="radio" id="radio-2" name="radio" value="pilihan-2">
+          <br>
+          <label for="radio-4">Sound System</label>
+          <input type="radio" id="radio-2" name="radio" value="pilihan-2">
+      </table>
+      </div>
+      <br>
+        <input type="Rombel" class="form-control" placeholder="Rombel" required>
+        <input type="Nama Ruangan" class="form-control" placeholder="Nama Ruangan" required>
+        <br>
+            <br>
+        <label for="Ruangan">Pilih Ruangan istirahat</label>
+                <select id="Ruangan" name="Ruangan">
+                    <option value="Ruangan istirahat 1">Ruang Istirahat 1</option>
+                    <option value="Ruangan istirahat 2">Ruang Istirahat 2</option>
+                    <option value="Ruangan istirahat 3">Ruang Istirahat 3</option>
+                </select>
+                <br>
+            <br>
+        <input type="Tanggal Peminjaman " class="form-control" placeholder="Tanggal Peminjaman" required>
+        <input type="Nomor HandPhone" class="form-control" placeholder="Nomor HandPhone" required>
+        <div>
+            <fieldset>
+            <table>
+            <label for="radio-1">Dosen</label>
+            <input type="radio" id="radio-1" name="radio" value="pilihan-1">
+            <br>
+            <label for="radio-2">Asdos</label>
+            <input type="radio" id="radio-2" name="radio" value="pilihan-2">
+            <br>
+            <label for="radio-3">Mahasiswa</label>
+            <input type="radio" id="radio-2" name="radio" value="pilihan-2">
+        </fieldset>
+        </table>
+        </div>
+        <br>
+        <button type="submit" class="btn">Booking Sekarang</button>
+</body>
+</html>
